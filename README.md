@@ -1,3 +1,3 @@
-## Snippets
+## Snippet
 
-- [Deep Reinforcement Learning Seminar](snippet/rl)
+<Posts page='snippet'/>

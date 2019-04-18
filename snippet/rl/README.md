@@ -1,5 +1,8 @@
-# Deep Reinforcement Learning Seminar
+---
+date: 2019-04-18
+---
 
+# Deep Reinforcement Learning Seminar
 
 ## Materials
 
