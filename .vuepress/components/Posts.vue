@@ -1,13 +1,11 @@
 <template>
   <div class="posts" v-if="posts.length">
-    <ul class="post" v-for="post in posts">
-        <div v-if="post.title">
-            <li>
-              <router-link :to="post.path">
-                {{post.title}}
-              </router-link>
-            </li>
-        </div>
+    <ul>
+        <li v-if="post.title" class="post" v-for="post in posts">
+          <router-link :to="post.path">
+            {{post.title}}
+          </router-link>
+        </li>
     </ul>
   </div>
 </template>
@@ -23,7 +21,7 @@ export default {
           return x.path.match(new RegExp(`(${currentPage})`));
         })
         .sort((a, b) => {
-          return new Date(b.frontmatter.date) - new Date(a.frontmatter.date);
+          return b > a;
         });
       return posts;
     }
