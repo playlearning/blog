@@ -2,9 +2,9 @@
   <div class="posts" v-if="posts.length">
     <ul>
         <li v-if="post.title" class="post" v-for="post in posts">
-          <router-link :to="post.path">
-            {{post.title}}
-          </router-link>
+            <router-link :to="post.path">
+                {{post.title}}
+            </router-link>
         </li>
     </ul>
   </div>
