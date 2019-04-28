@@ -13,13 +13,12 @@
                 <td scope="row">{{ s.event }}</td>
                 <td>{{ s.date}}</td>
                 <td>
-                    <strong>{{ s.description }}</strong>
+                    {{ s.description }}
                 </td>
                 <td>
                     <ul style="margin-block-start: 0">
                         <li v-for="p in s.readings">
-                            <span v-if="p.year || p.remark">[</span><span v-if="p.year">{{ p.year }}</span><span v-if="p.year && p.remark">,</span>
-                            <span v-if="p.remark">{{ p.remark }}</span><span v-if="p.year || p.remark">]</span>
+                            <span v-if="p.year || p.remark">[</span><span v-if="p.year">{{ p.year }}</span><span v-if="p.year && p.remark">, </span><span v-if="p.remark">{{ p.remark }}</span><span v-if="p.year || p.remark">]</span>
                             <a :href="p.link">{{ p.title }}</a>
                         </li>
                     </ul>
