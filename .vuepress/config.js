@@ -4,6 +4,9 @@ module.exports = {
         ['link', {rel: 'icon', href: '/shuttlecock-transparent-small.png' }],
         ['link', {rel: 'stylesheet', href: '/css/bootstrap.min.css'}]
     ],
+    themeConfig: {
+        sidebar: false
+    },
     markdown: {
         linkify: true
     },
