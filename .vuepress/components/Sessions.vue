@@ -17,7 +17,7 @@
                 </td>
                 <td>
                     <ul style="margin-block-start: 0">
-                        <li v-for="p in s.readings">
+                        <li v-bind:class="{ stress: p.stress }" v-for="p in s.readings">
                             <span v-if="p.year || p.remark">[</span><span v-if="p.year">{{ p.year }}</span><span v-if="p.year && p.remark">, </span><span v-if="p.remark">{{ p.remark }}</span><span v-if="p.year || p.remark">]</span>
                             <a :href="p.link">{{ p.title }}</a>
                         </li>
@@ -29,13 +29,25 @@
 </template>
 
 <script>
-import sessions from './json/sessions.json'
+import axios from 'axios'
 
 export default {
     data () {
         return {
-            items: sessions
+            items: []
         }
+    },
+    props: ['src'],
+    mounted () {
+        axios
+            .get(this.src)
+            .then(response => (this.items = response.data))
     }
 }
 </script>
+
+<style>
+.stress {
+    font-weight: bold;
+}
+</style>

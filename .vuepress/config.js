@@ -1,7 +1,7 @@
 module.exports = {
     title: 'Mr.Blue\'s Blog',
     head: [
-        ['link', {rel: 'icon', href: '/shuttlecock-transparent-small.png' }],
+        ['link', {rel: 'icon', href: '/imgs/shuttlecock-transparent-small.png' }],
         ['link', {rel: 'stylesheet', href: '/css/bootstrap.min.css'}]
     ],
     themeConfig: {

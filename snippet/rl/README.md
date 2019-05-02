@@ -6,7 +6,7 @@ date: 2019-04-18
 
 ## Sessions
 
-<Sessions/>
+<Sessions src='/json/rl_sessions.json'/>
 
 ## Materials
 
