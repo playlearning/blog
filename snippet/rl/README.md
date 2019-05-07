@@ -6,7 +6,19 @@ date: 2019-04-18
 
 ## Sessions
 
+::: tip
+**Target: Learning reinforcement learning basics and advances within 10 sessions in 2 months.**
+:::
+
 <Sessions src='/json/rl_sessions.json'/>
+
+
+## Comparison of different schedules
+
+<cs294-112></cs294-112>
+
+<rl-60days></rl-60days>
+
 
 ## Materials
 
