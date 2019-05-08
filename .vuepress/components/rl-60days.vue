@@ -207,7 +207,7 @@
     </div>
 </template>
 
-<style scope>
+<style scoped>
 .rl60days {
     background-color: #f8f8f8;
     padding: 1em 2em;
