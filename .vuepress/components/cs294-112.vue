@@ -1,5 +1,5 @@
 <template>
-    <div class="cs294-112">
+    <div id="cs294-112">
         <h3 class="header-title"><a href="http://rail.eecs.berkeley.edu/deeprlcourse/">CS294-112</a></h3>
         <p>Deep Reinforcement Learning at UC Berkeley by Sergey Levine</p>
         <ul class="lists two-col animate-3" resource="slides">
@@ -85,7 +85,7 @@
 </template>
 
 <style scoped>
-.cs294-112 {
+#cs294-112 {
     background-color: #f8f8f8;
     padding: 1em 2em;
     margin-top: 1em;

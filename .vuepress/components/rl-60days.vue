@@ -1,5 +1,5 @@
 <template>
-    <div class='rl60days'>
+    <div id='rl60days'>
         <h3 class="header-title"><a class="title" href="https://github.com/andri27-ts/60_Days_RL_Challenge">60 Days RL Challenge</a></h3>
         <p>Learn Deep Reinforcement Learning in Depth in 60 days</p>
         <ul class='two-col'>
@@ -208,14 +208,14 @@
 </template>
 
 <style scoped>
-.rl60days {
+#rl60days {
     background-color: #f8f8f8;
     padding: 1em 2em;
     margin-top: 1em;
     border-radius: 2px;
     font-size: 0.9em;
 }
-.rl60days>ul>li>strong>a {
+#rl60days>ul>li>strong>a {
     border-bottom: 1px dotted;
 }
 .title {
