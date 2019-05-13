@@ -9,15 +9,15 @@
             </tr>
         </thead>
         <tbody>
-            <tr v-for="s in items">
+            <tr v-for="s in topic.sessions">
                 <td scope="row">{{ s.event }}</td>
                 <td>{{ s.date}}</td>
                 <td>
-                    {{ s.description }}
+                    {{ s.title }}
                 </td>
                 <td>
                     <ul style="margin-block-start: 0">
-                        <li v-bind:class="{ stress: p.stress }" v-for="p in s.readings">
+                        <li v-bind:class="{ stress: p.stress }" v-for="p in s.papers">
                             <span v-if="p.year || p.remark">[</span><span v-if="p.year">{{ p.year }}</span><span v-if="p.year && p.remark">, </span><span v-if="p.remark">{{ p.remark }}</span><span v-if="p.year || p.remark">]</span>
                             <a :href="p.link">{{ p.title }}</a>
                         </li>
@@ -30,18 +30,20 @@
 
 <script>
 import axios from 'axios'
+import yaml from 'js-yaml'
 
 export default {
     data () {
         return {
-            items: []
+            topic: '',
         }
     },
     props: ['src'],
     mounted () {
-        axios
-            .get(this.src)
-            .then(response => (this.items = response.data))
+        axios.get(this.src)
+            .then(response => (
+                this.topic = yaml.safeLoad(response.data)
+            ))
     }
 }
 </script>

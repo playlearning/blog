@@ -10,7 +10,7 @@ date: 2019-04-18
 **Target: Learning reinforcement learning basics and advances within 10 sessions in 2 months.**
 :::
 
-<Sessions src='/json/rl_sessions.json'/>
+<Sessions src='/yaml/rl_sessions.yaml' />
 
 
 ## Comparison of different schedules
