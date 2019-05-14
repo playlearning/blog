@@ -20,7 +20,7 @@ date: 2019-04-18
 <rl-60days></rl-60days>
 
 
-## Paper List
+## Topics
 
 <Papers src='/yaml/papers/rl_nlp.yaml'></Papers>
 

@@ -147,3 +147,52 @@ papers:
     date: 2019-04-03
     link: https://arxiv.org/pdf/1902.10236.pdf
     proceeding: NAACL 2019
+  - title: "Ask the Right Questions: Active Question Reformulation with Reinforcement Learning"
+    date: 2018-03-02
+    link: https://arxiv.org/pdf/1705.07830.pdf
+    proceeding: ICLR 2018
+  - title: "Towards End-to-End Reinforcement Learning of Dialogue Agents for Information Access"
+    date: 2017-04-20
+    link: https://arxiv.org/pdf/1609.00777.pdf
+    code: https://github.com/MiuLab/KB-InfoBot
+    proceeding: ACL 2017
+  - title: Task-Oriented Query Reformulation with Reinforcement Learning
+    date: 2017-09-24
+    link: https://arxiv.org/pdf/1704.04572.pdf
+    code: https://github.com/nyu-dl/QueryReformulator
+    proceeding: EMNLP 2017
+  - title: Dialog Learning with Human-in-the-loop
+    date: 2017-01-13
+    link: https://arxiv.org/pdf/1611.09823.pdf
+    code: https://github.com/facebook/MemNN/tree/master/HITL
+    proceeding: ICLR 2017
+  - title: Learning through dialogue interactions by asking questions
+    link: https://arxiv.org/pdf/1612.04936.pdf
+    date: 2017-02-13
+    code: https://github.com/facebook/MemNN/tree/master/AskingQuestions
+    proceeding: ICLR 2017
+  - title: Reinforcement Learning for Transition-Based Mention Detection
+    date: 2017-03-13
+    link: https://arxiv.org/pdf/1703.04489.pdf
+    proceeding: NIPS 2016
+  - title: Learning End-to-End Goal-Oriented Dialog
+    date: 2017-03-30
+    link: https://arxiv.org/pdf/1605.07683.pdf
+    proceeding: ICLR 2017
+  - title: Dialog-based Language Learning
+    date: 2016-10-24
+    link: https://arxiv.org/pdf/1604.06045.pdf
+    code: https://github.com/facebook/MemNN/tree/master/DBLL<Paste>
+    proceeding: NIPS 2016
+  - title: End-to-End Goal-Driven Web Navigation
+    date: 2016-05-20
+    link: https://arxiv.org/pdf/1602.02261.pdf
+    code: https://github.com/facebook/MemNN/tree/master/DBLL
+    proceeding: NIPS 2016
+references:
+  - title: drl4nlp.scratchpad
+    link: https://github.com/ganeshjawahar/drl4nlp.scratchpad
+  - title: DRL4NLP
+    link: https://sites.cs.ucsb.edu/~william/papers/ACL2018DRL4NLP.pdf
+  - title: NAACL-HLT 2019 Accepted Papers
+    link: https://naacl2019.org/program/accepted/
