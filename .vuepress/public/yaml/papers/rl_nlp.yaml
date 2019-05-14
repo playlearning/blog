@@ -1,5 +1,5 @@
 topic: Reinforcement Learning for Natural Language Processing
-target: Find recently task on reinforcement learning especially considering NLP task.
+target: Find recently NLP tasks on reinforcement learning.
 papers:
   - title: Learning to Compose Words into Sentences with Reinforcement Learning
     link: https://arxiv.org/pdf/1611.09100.pdf
