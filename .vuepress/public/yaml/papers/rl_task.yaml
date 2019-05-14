@@ -1,0 +1,149 @@
+topic: Reinforcement Learning for Natural Language Processing
+target: Find recently task on reinforcement learning especially considering NLP task.
+papers:
+  - title: Learning to Compose Words into Sentences with Reinforcement Learning
+    link: https://arxiv.org/pdf/1611.09100.pdf
+    date: "2016-11-28"
+    proceeding: ICLR 2017
+  - title: Improving Information Extraction by Acquiring External Evidence with Reinforcement Learning
+    link: https://arxiv.org/pdf/1603.07954.pdf
+    date: "2016-03-25"
+    proceeding: EMNLP 2016
+  - title: "DeepPath: A Reinforcement Learning Method for Knowledge Graph Reasoning"
+    link: https://arxiv.org/pdf/1707.06690.pdf
+    date: 2017-07-20
+    abbr: DeepPath
+    code: https://github.com/xwhan/DeepPath
+    proceeding: EMNLP 2017
+  - title: Sequence Level Training with Recurrent Neural Networks
+    link: https://arxiv.org/pdf/1511.06732.pdf
+    date: 2015-11-20
+    abbr: MIXER
+    proceeding: ICLR 2016
+  - title: "Learning how to Active Learn: A Deep Reinforcement Learning Approach"
+    link: https://arxiv.org/pdf/1708.02383.pdf
+    date: 2017-08-08
+    proceeding: EMNLP 2017
+  - title: Reinforced Co-Training
+    link: https://arxiv.org/pdf/1804.06035.pdf
+    date: 2018-04-17
+    proceeding: NAACL 2018
+  - title: Robust Distant Supervision Relation Extraction via Deep Reinforcement Learning
+    link: https://arxiv.org/pdf/1805.09927.pdf
+    date: 2018-05-24
+    proceeding: ACL 2018
+  - title: Deep Reinforcement Learning for Mention-Ranking Coreference Models
+    link: https://arxiv.org/pdf/1609.08667.pdf
+    date: 2016-09-27
+    proceeding: EMNLP 2016
+  - title: Improving Coreference Resolution by Learning Entity-Level Distributed Representations
+    link: https://arxiv.org/pdf/1606.01323.pdf
+    date: 2016-06-04
+    proceeding: ACL 2016
+  - title: Deep Reinforcement Learning for Chinese Zero Pronoun Resolution
+    link: https://arxiv.org/pdf/1806.03711.pdf
+    date: 2018-07-19
+    proceeding: ACL 2018
+  - title: A Deep Reinforced Model for Abstractive Summarization
+    link: https://arxiv.org/pdf/1705.04304.pdf
+    date: 2017-11-13
+    stress: true
+    proceeding: ICLR 2018
+  - title: Deep Communicating Agents for Abstractive Summarization
+    link: https://arxiv.org/pdf/1803.10357.pdf
+    date: 2018-08-15
+    proceeding: ACL 2018
+  - title: Video Captioning via Hierarchical Reinforcement Learning
+    link: https://arxiv.org/pdf/1711.11135.pdf
+    date: 2018-03-29
+    proceeding: CVPR 2018
+  - title: Scheduled Policy Optimization for Natural Language Communication with Intelligent Agents
+    link: https://arxiv.org/pdf/1806.06187.pdf
+    date: 2018-07-07
+    code: https://github.com/xwhan/walk_the_blocks
+    proceeding: IJCAI 2018
+  - title: "Look Before You Leap: Bridging Model-Free and Model-Based Reinforcement Learning for Planned-Ahead Vision-and-Language Navigation"
+    link: https://arxiv.org/pdf/1803.07729.pdf
+    date: 2018-07-26
+    proceeding: ECCV 2018
+  - title: Search-based Structured Prediction
+    link: http://hunch.net/~jl/projects/reductions/searn/searn.pdf
+    date: 2009-07-04
+    abbr: SEARN
+    stress: true
+    proceeding: Machine Learning 2009
+  - title: "KBGAN: Adversarial Learning for Knowledge Graph Embeddings"
+    link: https://arxiv.org/pdf/1711.04071.pdf
+    date: 2018-04-16
+    abbr: KBGAN
+    code: https://github.com/cai-lw/KBGAN
+    proceeding: NAACL 2018
+  - title: "No Metrics Are Perfect: Adversarial Reward Learning for Visual Storytelling"
+    link: https://arxiv.org/pdf/1804.09160.pdf
+    date: 2018-07-09
+    abbr: AREL
+    code: https://github.com/eric-xw/AREL
+    proceeding: ACL 2018
+  - title: "Language Understanding for Text-based Games Using Deep Reinforcement Learning"
+    date: 2015-09-11
+    link: https://arxiv.org/pdf/1506.08941.pdf
+    code: https://github.com/karthikncode/text-world-player
+    stress: true
+    proceeding: EMNLP 2015
+  - title: Deep Reinforcement Learning with a Natural Language Action Space
+    date: 2016-06-08
+    link: https://arxiv.org/pdf/1511.04636.pdf
+    abbr: DRRN
+    proceeding: ACL 2016
+  - title: Deep Reinforcement Learning with a Combinatorial Action Space for Predicting Popular Reddit Threads
+    date: 2016-09-17
+    link: https://arxiv.org/pdf/1606.03667.pdf
+    proceeding: EMNLP 2016
+  - title: Reinforcement Learning with External Knowledge and Two-Stage Q-functions for Predicting Popular Reddit Threads
+    date: 2017-04-20
+    link: https://arxiv.org/pdf/1704.06217.pdf
+    proceeding: arXiv
+  - title: Globally Coherent Text Generation with Neural Checklist Models
+    date: "2016"
+    link: https://aclweb.org/anthology/D16-1032.pdf
+    proceeding: EMNLP 2016
+  - title: Discourse-Aware Neural Rewards for Coherent Text Generation
+    date: 2018-05-10
+    link: https://arxiv.org/pdf/1805.03766.pdf
+    proceeding: NAACL 2018
+  - title: Accelerated Reinforcement Learning for Sentence Generation by Vocabulary Prediction
+    date: 2018-09-05
+    link: https://arxiv.org/pdf/1809.01694.pdf
+    proceeding: NAACL 2019
+  - title: "Courteously Yours: Inducing courteous behavior in Customer Care responses using Reinforced Pointer Generator Network"
+    date: 2019
+    link:
+    proceeding: NAACL 2019
+  - title: "Learning Interpretable Negation Rules via Weak Supervision at Document Level: A Reinforcement Learning Approach"
+    date: 2019
+    link:
+    proceeding: NAACL 2019
+  - title: Playing Text-Adventure Games with Graph-Based Deep Reinforcement Learning
+    date: 2019-03-25
+    link: https://arxiv.org/pdf/1812.01628.pdf
+    proceeding: NAACL 2019
+  - title: Posterior Regularized REINFORCE for Instance Selection in Distant Supervision
+    date: 2019-04-17
+    link: https://arxiv.org/pdf/1904.08051.pdf
+    proceeding: NAACL 2019
+  - title: Reinforcement Learning based Curriculum Optimization for Neural Machine Translation
+    date: 2019-02-28
+    link: https://arxiv.org/pdf/1903.00041.pdf
+    proceeding: NAACL 2019
+  - title: Reinforcement Learning Based Text Style Transfer without Parallel Training Corpus
+    date: 2019-03-26
+    link: https://arxiv.org/pdf/1903.10671.pdf
+    proceeding: NAACL 2019
+  - title: Rethinking Action Spaces for Reinforcement Learning in End-to-end Dialog Agents with Latent Variable Models
+    date: 2019-04-15
+    link: https://arxiv.org/pdf/1902.08858.pdf
+    proceeding: NAACL 2019
+  - title: "Learning When Not to Answer: A Ternary Reward Structure for Reinforcement Learning based Question Answering"
+    date: 2019-04-03
+    link: https://arxiv.org/pdf/1902.10236.pdf
+    proceeding: NAACL 2019
