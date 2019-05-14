@@ -14,7 +14,7 @@
         <span class="index">
           {{index+1}}.
         </span>
-        <span v-bind:class="{ stress: p.stress }">
+        <span class="title" v-bind:class="{ stress: p.stress }">
           [{{ new Date(String(p.date)).getFullYear() }}]
           <a v-if="p.link" :href="p.link" target="_blank" alt="List is rendered from this YAML file.">{{ p.title }}</a>
           <span v-else>{{ p.title }}</span>
