@@ -30,7 +30,7 @@ def download_list(papers, folder='.'):
         download(url, folder, title=title)
 
 def download(url, folder='.', title=None):
-    folder = Path(folder)
+    folder = Path(folder).expanduser()
     folder.mkdir(parents=True, exist_ok=True)
 
     file_name = get_name(url, title)

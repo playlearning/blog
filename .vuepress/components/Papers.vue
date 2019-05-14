@@ -9,6 +9,7 @@
       Detail
     </span>
     <a class="yaml" :href="src" target="_blank">YAML</a>
+    <a class="yaml" href="https://github.com/playlearning/blog/tree/master/.vuepress/public/yaml/papers" target="_blank">Download Papers</a>
     <ul>
       <li v-for="(p, index) in papers">
         <span class="index">
