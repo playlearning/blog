@@ -1,11 +1,11 @@
 topic: Interactive Information Retrieving
 papers:
   - title: Information retrieval through man-machine dialogue
-    link: https://sci-hub.tw/10.1108/eb026631
+    link: https://moscow.sci-hub.tw/4857/713716b50c106cc901531cff133d62d8/oddy1977.pdf
     date: 1977
     stress: true
   - title: "I3R: A New Approach to the Design of Document Retrieval Systems"
-    link: https://search.proquest.com/openview/88c389b976c22e49aa16ca95a9379929/1?pq-origsite=gscholar&cbl=41136
+    link: https://moscow.sci-hub.tw/5/7885990557f7530b85071d3b9f5b5045/croft1987.pdf
     date: 1983
     stress: true
   - title: "Cases, scripts, and information-seeking strategies: On the design of interactive information retrieval systems"

@@ -35,7 +35,11 @@ def download(url, folder='.', title=None):
 
     file_name = get_name(url, title)
     dst = folder.joinpath(file_name)
-    download_from_url(url, str(dst))
+    try:
+        download_from_url(url, str(dst))
+    except Exception as e:
+        print('Failed to download `{}`: \n{}'.format(file_name, str(e)))
+        print('\t`{}`.'.format(url))
 
 
 def download_yaml(path, folder='.'):
@@ -61,28 +65,35 @@ def download_from_url(url, dst):
     @param: url to download file
     @param: dst place to put the file
     """
-    file_size = int(requests.head(url).headers["Content-Length"])
-    if os.path.exists(dst):
-        first_byte = os.path.getsize(dst)
-    else:
-        first_byte = 0
-    if first_byte >= file_size:
-        return file_size
-    header = {"Range": "bytes=%s-%s" % (first_byte, file_size)}
     filename = Path(dst).name
-    max_len = 15
+    max_len = 30
     info = (filename[:max_len] + '..') if len(filename) > max_len else filename
-    pbar = tqdm(
-        total=file_size, initial=first_byte,
-        unit='B', unit_scale=True, desc=filename)
-    req = requests.get(url, headers=header, stream=True)
-    with(open(dst, 'ab')) as f:
-        for chunk in req.iter_content(chunk_size=1024):
-            if chunk:
-                f.write(chunk)
-                pbar.update(1024)
-    pbar.close()
-    return file_size
+
+    headers = requests.head(url).headers
+    if "Content-Length" in headers:
+        file_size = int(headers["Content-Length"])
+        first_byte = os.path.getsize(dst) if os.path.exists(dst) else 0
+        if first_byte >= file_size:
+            return file_size
+
+        header = {"Range": "bytes=%s-%s" % (first_byte, file_size)}
+        pbar = tqdm(
+            total=file_size, initial=first_byte, ncols=0,
+            unit='B', unit_scale=True, desc=info)
+        req = requests.get(url, headers=header, stream=True)
+        with(open(dst, 'ab')) as f:
+            for chunk in req.iter_content(chunk_size=1024):
+                if chunk:
+                    f.write(chunk)
+                    pbar.update(1024)
+        pbar.close()
+    else:
+        print(info)
+        req = requests.get(url, stream=True)
+        with(open(dst, 'wb')) as f:
+            for chunk in req.iter_content(chunk_size=1024):
+                if chunk:
+                    f.write(chunk)
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
