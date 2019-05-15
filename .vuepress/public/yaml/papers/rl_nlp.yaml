@@ -190,9 +190,9 @@ papers:
     code: https://github.com/facebook/MemNN/tree/master/DBLL
     proceeding: NIPS 2016
 references:
-  - title: drl4nlp.scratchpad
-    link: https://github.com/ganeshjawahar/drl4nlp.scratchpad
   - title: DRL4NLP
     link: https://sites.cs.ucsb.edu/~william/papers/ACL2018DRL4NLP.pdf
   - title: NAACL-HLT 2019 Accepted Papers
     link: https://naacl2019.org/program/accepted/
+  - title: drl4nlp.scratchpad
+    link: https://github.com/ganeshjawahar/drl4nlp.scratchpad

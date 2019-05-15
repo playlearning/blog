@@ -13,16 +13,16 @@ date: 2019-04-18
 <Sessions src='/yaml/rl_sessions.yaml' />
 
 
+## Topics
+
+<Papers src='/yaml/papers/rl_nlp.yaml'></Papers>
+
+
 ## Comparison of different schedules
 
 <cs294-112></cs294-112>
 
 <rl-60days></rl-60days>
-
-
-## Topics
-
-<Papers src='/yaml/papers/rl_nlp.yaml'></Papers>
 
 
 ## Materials
