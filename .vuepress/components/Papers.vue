@@ -2,7 +2,9 @@
   <div class="paper">
     <div class="topic_head">
       <p>
-        <strong><span class="topic">Topic: {{ paper_list.topic }}</span></strong>
+        <strong>
+          <a class="topic" :id="topic_id" :href="'#' + topic_id">Topic: {{ paper_list.topic }}</a>
+        </strong>
       </p>
       <span class="btn_verbose" v-on:click="toggle_verbose">
         <span v-if="is_verbose">Hide</span>
@@ -14,7 +16,7 @@
     </div>
     <div class="topic_body">
       <p>
-        <strong><span class="section">Paper List</span></strong>
+        <strong><span class="section">Resources</span></strong>
       </p>
       <ul>
         <li v-for="(p, index) in papers">
@@ -22,8 +24,12 @@
             {{index+1}}.
           </span>
           <span class="title" v-bind:class="{ stress: p.stress }">
-            [{{ new Date(String(p.date)).getFullYear() }}]
-            <a v-if="p.link" :href="p.link" target="_blank" alt="List is rendered from this YAML file.">{{ p.title }}</a>
+            <span v-if="p.date">[{{ new Date(String(p.date)).getFullYear() }}]</span>
+            <a v-if="p.link" :href="p.link" target="_blank">{{ p.title }}</a>
+            <span v-else-if="p.pdf" >
+              <a :href="p.pdf" target="_blank">{{ p.title }}</a>
+              <span class="pdf">pdf</span>
+            </span>
             <span v-else>{{ p.title }}</span>
           </span>
           <span v-if="p.proceeding" class="proceeding">{{ p.proceeding }}</span>
@@ -34,6 +40,29 @@
           </div>
         </li>
       </ul>
+      <div v-if="paper_list.tasks && paper_list.tasks.length">
+        <p>
+          <strong><span class="section">Tasks</span></strong>
+        </p>
+        <ul class="references">
+          <li v-for="(t, index) in paper_list.tasks">
+            <span class="index">
+              {{index+1}}.
+            </span>
+            <span>{{ t.name }}</span>
+            <div v-if="t.datasets && t.datasets.length" >
+              <ul>
+                <li v-for="(d, index) in t.datasets">
+                  <a :href="d.link">
+                    <span v-if="d.abbr">{{ d.abbr}}</span>
+                    <span v-else>{{ d.name }}</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
       <div v-if="references.length">
         <p>
           <strong><span class="section">References</span></strong>
@@ -91,6 +120,13 @@ export default {
       } else {
         return []
       }
+    },
+    topic_id: function() {
+      if (this.paper_list.topic) {
+        return this.paper_list.topic.toLowerCase().split(' ').join('-')
+      } else {
+        return ''
+      }
     }
   },
   methods: {
@@ -104,6 +140,8 @@ export default {
 <style scoped>
 .topic {
   font-size: 1.2em;
+  color: inherit;
+  padding-top: 4.6rem;
 }
 .btn_verbose, .link{
   width: fit-content;
@@ -149,5 +187,11 @@ ul li {
 }
 .topic_body {
   padding-left: 1em;
+}
+.pdf {
+  font-size: 0.7em;
+  color: #aaa;
+  font-style: italic;
+  font-weight: 700;
 }
 </style>
