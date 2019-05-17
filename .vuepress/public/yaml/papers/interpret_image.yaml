@@ -1,0 +1,23 @@
+topic: Interpretability in Image Processing
+papers:
+  - title: Exploring Neural Networks with Activation Atlases
+    link: https://distill.pub/2019/activation-atlas/
+    date: 2019-03-06
+  - title: Feature Visualization
+    link: https://distill.pub/2017/feature-visualization/
+    date: 2017-07-11
+  - title: The Building Blocks of Interpretability
+    link: https://distill.pub/2018/building-blocks/
+    date: 2018-03-06
+  - title: Using Artificial Intelligence to Augment Human Intelligence
+    link: https://distill.pub/2017/aia/
+    date: 2017-12-04
+  - title: "Visualizing Representations: Deep Learning and Human Beings"
+    link: http://colah.github.io/posts/2015-01-Visualizing-Representations/
+    date: 2015-01-16
+  - title: Differentiable Image Parameterizations
+    link: https://distill.pub/2018/differentiable-parameterizations/
+    date: 2018-07-25
+  - title: t-SNE visualization of CNN codes
+    link: https://cs.stanford.edu/people/karpathy/cnnembed/
+    date: 2014
