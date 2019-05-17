@@ -46,7 +46,7 @@ tasks:
       - name: subset of Never-Ending Language Learning
         link: http://cs.ucsb.edu/~xwhan/datasets/NELL-995.zip
         target: relation reasoning
-        abbr: NEEL-995
+        abbr: NELL-995
         metrics: [MAP]
   - name: Text summarization
     datasets:
