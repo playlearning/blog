@@ -21,7 +21,7 @@ def download_list(papers, folder='.'):
     for paper in papers:
         if type(paper) is dict:
             title = paper['title']
-            url = paper['link']
+            url = paper['pdf']
         elif type(paper) in [tuple, list]:
             title, url = paper
         else:
@@ -48,8 +48,8 @@ def download_yaml(path, folder='.'):
     papers = info['papers']
     plist = []
     for paper in papers:
-        link = paper['link']
-        if link:
+        if 'pdf' in paper:
+            link = paper['pdf']
             head = []
             head.append(str(parse(str(paper['date'])).year))
             if 'abbr' in paper:

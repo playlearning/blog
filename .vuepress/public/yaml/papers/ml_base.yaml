@@ -1,0 +1,9 @@
+topic: Machine Learning Basics
+papers:
+  - title: Maximum likelihood estimation
+    link: https://towardsdatascience.com/probability-concepts-explained-maximum-likelihood-estimation-c7b4342fdbb1
+    date: 2018-01-04
+    questions:
+      - What is the difference between likelihood and probability?
+      - Why do we `maximize` likelihood?
+      - Why `log` likelihood?
