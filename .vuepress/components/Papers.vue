@@ -6,37 +6,43 @@
           <a class="topic" :id="topic_id" :href="'#' + topic_id">Topic: {{ paper_list.topic }}</a>
         </strong>
       </p>
-      <span class="btn_verbose" v-on:click="toggle_verbose">
-        <span v-if="is_verbose">Hide</span>
-        <span v-else>Show</span>
-        Detail
-      </span>
-      <a class="link" :href="src" target="_blank">YAML</a>
-      <a class="link" href="https://github.com/playlearning/blog/tree/master/.vuepress/public/yaml/papers" target="_blank">Download Papers in List</a>
-    </div>
-    <div class="topic_body">
       <p>
-        <strong><span class="section">Resources</span></strong>
+        <span class="button is-small" v-on:click="toggle_verbose">
+          <span v-if="is_verbose">Hide</span>
+          <span v-else>Show</span>
+          Detail
+        </span>
+        <a class="button is-small btn-link" :href="src" target="_blank">YAML</a>
+        <a class="button is-small btn-link" href="https://github.com/playlearning/blog/tree/master/.vuepress/public/yaml/papers" target="_blank">Download Papers in List</a>
+      </p>
+      <p>
+        <strong><span>Resources</span></strong>
       </p>
       <ul>
         <li v-for="(p, index) in papers">
           <span class="index">
             {{index+1}}.
           </span>
-          <span class="title" v-bind:class="{ stress: p.stress }">
+          <span v-bind:class="{ stress: p.stress }">
             <span v-if="p.date">[{{ new Date(String(p.date)).getFullYear() }}]</span>
             <a v-if="p.link" :href="p.link" target="_blank">{{ p.title }}</a>
-            <span v-else-if="p.pdf" >
-              <a :href="p.pdf" target="_blank">{{ p.title }}</a>
-              <span class="pdf">pdf</span>
-            </span>
             <span v-else>{{ p.title }}</span>
+            <a v-if="p.pdf" :href="p.pdf" target="_blank"><i class="far fa-file-pdf is-size-7 has-text-black"></i></a>
           </span>
           <span v-if="p.proceeding" class="proceeding">{{ p.proceeding }}</span>
           <div v-if="is_verbose" class="detail">
             <span v-if="p.code">
               <a :href="p.code" target="_blank">[Code]</a>
             </span>
+            <div v-if="p.questions">
+              <p class="title is-6">Questions:</p>
+              <ol>
+                <li v-for="(q, index) in p.questions">
+                  <strong>{{ index+1 }}.</strong>
+                  {{ q }}
+                </li>
+              </ol>
+            </div>
           </div>
         </li>
       </ul>
@@ -142,16 +148,10 @@ export default {
   font-size: 1.2em;
   color: inherit;
   padding-top: 4.6rem;
+  margin-top: 0.5em;
 }
-.btn_verbose, .link{
-  width: fit-content;
-  text-align: center;
-  padding: 2px;
-  margin-right: 1.5em;
-  cursor: pointer;
-}
-.btn_verbose {
-  border-bottom: 1px dotted #333;
+.btn-link {
+  text-decoration: none !important;
 }
 .stress {
   font-weight: bold;
@@ -184,9 +184,6 @@ ul li {
 }
 .section {
   font-size: 1.2em;
-}
-.topic_body {
-  padding-left: 1em;
 }
 .pdf {
   font-size: 0.7em;

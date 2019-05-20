@@ -20,6 +20,9 @@ export default {
         .filter(x => {
           return x.path.match(new RegExp(`(${currentPage})`));
         })
+        .filter(x => {
+          return !x.frontmatter.hidden;
+        })
         .sort((a, b) => {
           return b > a;
         });

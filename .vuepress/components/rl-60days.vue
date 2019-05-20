@@ -223,9 +223,7 @@
     font-weight: bold;
 }
 .two-col {
-    -webkit-column-count: 2;
-    -moz-column-count: 2;
-    column-count: 2;
+  column-width: 300px;
 }
 p {
     margin: 0 0 10px;

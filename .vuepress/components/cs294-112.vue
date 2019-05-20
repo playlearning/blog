@@ -98,9 +98,7 @@
     font-weight: 300;
 }
 .lists.two-col {
-    -webkit-column-count: 2;
-    -moz-column-count: 2;
-    column-count: 2;
+  column-width: 300px;
 }
 ul.lists {
     padding: 0;

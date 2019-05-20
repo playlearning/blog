@@ -18,6 +18,15 @@ papers:
   - title: Differentiable Image Parameterizations
     link: https://distill.pub/2018/differentiable-parameterizations/
     date: 2018-07-25
-  - title: t-SNE visualization of CNN codes
-    link: https://cs.stanford.edu/people/karpathy/cnnembed/
-    date: 2014
+  - title: Visualizing High-Dimensional Data Using t-SNE
+    pdf: https://lvdmaaten.github.io/publications/papers/JMLR_2008.pdf
+    proceeding: JMLR 2008
+    link: https://lvdmaaten.github.io/tsne/
+    date: 2008
+    demos:
+      - title: How to Use t-SNE Effectively
+        link: https://distill.pub/2016/misread-tsne/
+      - title: t-SNE running on 50-dimensional word vectors
+        link: https://cs.stanford.edu/people/karpathy/tsnejs/wordvecs.html
+      - title: t-SNE visualization of CNN codes
+        link: https://cs.stanford.edu/people/karpathy/cnnembed/
