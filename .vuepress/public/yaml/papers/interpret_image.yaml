@@ -30,3 +30,7 @@ papers:
         link: https://cs.stanford.edu/people/karpathy/tsnejs/wordvecs.html
       - title: t-SNE visualization of CNN codes
         link: https://cs.stanford.edu/people/karpathy/cnnembed/
+  - title: Model selection and estimation in regression with grouped variables
+    date: 2006
+    pdf: http://pages.stat.wisc.edu/~myuan/papers/glasso.final.pdf
+

@@ -1,62 +1,62 @@
 topic: Interactive Information Retrieving
 papers:
   - title: Information retrieval through man-machine dialogue
-    link: https://moscow.sci-hub.tw/4857/713716b50c106cc901531cff133d62d8/oddy1977.pdf
+    pdf: https://moscow.sci-hub.tw/4857/713716b50c106cc901531cff133d62d8/oddy1977.pdf
     date: 1977
     stress: true
   - title: "I3R: A New Approach to the Design of Document Retrieval Systems"
-    link: https://moscow.sci-hub.tw/5/7885990557f7530b85071d3b9f5b5045/croft1987.pdf
+    pdf: https://moscow.sci-hub.tw/5/7885990557f7530b85071d3b9f5b5045/croft1987.pdf
     date: 1983
     stress: true
   - title: "Cases, scripts, and information-seeking strategies: On the design of interactive information retrieval systems"
-    link: http://www.cs.cmu.edu/~dod/papers/irdialog_belkin.pdf
+    pdf: http://www.cs.cmu.edu/~dod/papers/irdialog_belkin.pdf
     date: 1994
     stress: true
   - title: "Exploratory search: from finding to understanding"
-    link: https://pdfs.semanticscholar.org/13a7/eefe3c5ed582f91973c2838bf092d0910677.pdf
+    pdf: https://pdfs.semanticscholar.org/13a7/eefe3c5ed582f91973c2838bf092d0910677.pdf
     date: 2006
     stress: true
   - title: "Exploratory Search: Beyond the Query-Response Paradigm"
-    link: http://www.iro.umontreal.ca/~nie/IFT6255/Books/ExploratorySearch.pdf
+    pdf: http://www.iro.umontreal.ca/~nie/IFT6255/Books/ExploratorySearch.pdf
     date: 2009
     stress: true
   - title: Learning End-to-End Goal-Oriented Dialog
-    link: https://arxiv.org/pdf/1605.07683.pdf
+    pdf: https://arxiv.org/pdf/1605.07683.pdf
     date: 2016
     stress: true
   - title: Towards Conversational Recommender Systems
-    link: https://www.microsoft.com/en-us/research/wp-content/uploads/2016/06/rfp0063-christakopoulou.pdf
+    pdf: https://www.microsoft.com/en-us/research/wp-content/uploads/2016/06/rfp0063-christakopoulou.pdf
     date: 2016
   - title: Extracting Audio Summaries to Support Effective Spoken Document Search
-    link: http://marksanderson.org/publications/my_papers/JASIST2016.pdf
+    pdf: http://marksanderson.org/publications/my_papers/JASIST2016.pdf
     date: 2016
   - title: A Theoretical Framework for Conversational Search
-    link: https://www.microsoft.com/en-us/research/wp-content/uploads/2017/01/radlinski2017conversational.pdf
+    pdf: https://www.microsoft.com/en-us/research/wp-content/uploads/2017/01/radlinski2017conversational.pdf
     date: 2017
   - title: Modelling Information Needs in Collaborative Search Conversations
-    link: http://marksanderson.org/publications/my_papers/sigir2017a.pdf
+    pdf: http://marksanderson.org/publications/my_papers/sigir2017a.pdf
     date: 2017
   - title: Neural Matching Models for Question Retrieval and Next Question Prediction in Conversation
-    link: https://arxiv.org/pdf/1707.05409.pdf
+    pdf: https://arxiv.org/pdf/1707.05409.pdf
     date: 2017
   - title: A Conversational Search Transcription Protocol and Analysis
-    link: http://www.johannetrippas.com/papers/Trippas%20et%20al-CAIR2017-protocol.pdf
+    pdf: http://www.johannetrippas.com/papers/Trippas%20et%20al-CAIR2017-protocol.pdf
     date: 2017
   - title: "Attentive Memory Networks: Efficient Machine Reading for Conversational Search"
-    link: https://arxiv.org/pdf/1712.07229.pdf
+    pdf: https://arxiv.org/pdf/1712.07229.pdf
     date: 2017
   - title: Informing the Design of Spoken Conversational Search
-    link: https://www.damianospina.com/wp-content/uploads/2018/01/Trippas_CHIIR_2018.pdf
+    pdf: https://www.damianospina.com/wp-content/uploads/2018/01/Trippas_CHIIR_2018.pdf
     date: 2018
   - title: Analyzing and Characterizing User Intent in Information-seeking Conversations
-    link: https://arxiv.org/pdf/1804.08759.pdf
+    pdf: https://arxiv.org/pdf/1804.08759.pdf
     date: 2018
   - title: Conversational Recommender System
-    link: https://arxiv.org/pdf/1806.03277.pdf
+    pdf: https://arxiv.org/pdf/1806.03277.pdf
     date: 2018
   - title: "Towards Conversational Search and Recommendation: System Ask, User Respond"
-    link: http://yongfeng.me/attach/conv-search-rec-zhang2018.pdf
+    pdf: http://yongfeng.me/attach/conv-search-rec-zhang2018.pdf
     date: 2018
   - title: Asking Clarifying Questions in Open-Domain Information-Seeking Conversations
-    link:
+    pdf:
     date: 2019
