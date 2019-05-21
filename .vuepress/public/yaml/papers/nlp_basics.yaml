@@ -1,0 +1,23 @@
+topic: Natural Language Processing Basics
+papers:
+  - title: Efficient Estimation of Word Representations in Vector Space
+    pdf: https://arxiv.org/pdf/1301.3781.pdf
+    code: https://code.google.com/archive/p/word2vec/
+    date: 2013-09-07
+    proceeding: Workshop of ICLR 2013
+    abbr: word2vec
+  - title: Distributed Representations of Words and Phrases and their Compositionality
+    date: 2013-10-16
+    abbr: word2vec
+    proceeding: NIPS 2013
+    pdf: https://arxiv.org/pdf/1310.4546.pdf
+  - title: "GloVe: Global Vectors for Word Representation"
+    link: https://nlp.stanford.edu/projects/glove/
+    pdf: https://nlp.stanford.edu/pubs/glove.pdf
+    code: https://github.com/stanfordnlp/GloVe
+    date: 2014
+    proceeding: EMNLP 2014
+    abbr: GloVe
+references:
+  - title: "Deep Chit-Chat: Deep Learning for ChatBots"
+    pdf: http://www.ruiyan.me/pubs/tutorial-emnlp18.pdf

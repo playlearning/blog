@@ -1,10 +1,8 @@
 <template>
-  <div class="paper">
+  <div :id="topic_id">
     <div class="topic_head">
-      <p>
-        <strong>
-          <a class="topic" :id="topic_id" :href="'#' + topic_id">Topic: {{ paper_list.topic }}</a>
-        </strong>
+      <p class="title is-4">
+        <a class="has-text-black" :href="'#' + topic_id">Topic: {{ paper_list.topic }}</a>
       </p>
       <p>
         <span class="button is-small" v-on:click="toggle_verbose">
@@ -15,46 +13,44 @@
         <a class="button is-small btn-link" :href="src" target="_blank">YAML</a>
         <a class="button is-small btn-link" href="https://github.com/playlearning/blog/tree/master/.vuepress/public/yaml/papers" target="_blank">Download Papers in List</a>
       </p>
-      <p>
-        <strong><span>Resources</span></strong>
-      </p>
-      <ul>
+      <p class="title is-5">Resources</p>
+      <ol>
         <li v-for="(p, index) in papers">
-          <span class="index">
-            {{index+1}}.
-          </span>
+          <!--<span class="index">-->
+            <!--{{index+1}}.-->
+          <!--</span>-->
           <span v-bind:class="{ stress: p.stress }">
             <span v-if="p.date">[{{ new Date(String(p.date)).getFullYear() }}]</span>
             <a v-if="p.link" :href="p.link" target="_blank">{{ p.title }}</a>
             <span v-else>{{ p.title }}</span>
             <a v-if="p.pdf" :href="p.pdf" target="_blank"><i class="far fa-file-pdf is-size-7 has-text-black"></i></a>
           </span>
-          <span v-if="p.proceeding" class="proceeding">{{ p.proceeding }}</span>
-          <div v-if="is_verbose" class="detail">
+          <span v-if="p.proceeding" class="has-text-grey is-size-7 is-italic has-text-weight-semibold">{{ p.proceeding }}</span>
+          <div v-if="is_verbose" class="has-background-light">
             <span v-if="p.code">
-              <a :href="p.code" target="_blank">[Code]</a>
+                <a :href="p.code" target="_blank"><i class="far fa-file-code has-text-black"></i></a>
             </span>
             <div v-if="p.questions">
               <p class="title is-6">Questions:</p>
               <ol>
                 <li v-for="(q, index) in p.questions">
-                  <strong>{{ index+1 }}.</strong>
+                  <!--<strong>{{ index+1 }}.</strong>-->
                   {{ q }}
                 </li>
               </ol>
             </div>
           </div>
         </li>
-      </ul>
+      </ol>
       <div v-if="paper_list.tasks && paper_list.tasks.length">
         <p>
-          <strong><span class="section">Tasks</span></strong>
+          <strong><span class="title is-5">Tasks</span></strong>
         </p>
-        <ul class="references">
+        <ol>
           <li v-for="(t, index) in paper_list.tasks">
-            <span class="index">
-              {{index+1}}.
-            </span>
+            <!--<span class="index">-->
+              <!--{{index+1}}.-->
+            <!--</span>-->
             <span>{{ t.name }}</span>
             <div v-if="t.datasets && t.datasets.length" >
               <ul>
@@ -67,22 +63,17 @@
               </ul>
             </div>
           </li>
-        </ul>
+        </ol>
       </div>
       <div v-if="references.length">
-        <p>
-          <strong><span class="section">References</span></strong>
-        </p>
-        <ul class="references">
+        <p class="title is-5">References</p>
+        <ol class="ref-list">
           <li v-for="(r, index) in references">
-            <span class="index">
-              [{{index+1}}]
-            </span>
             <a v-if="r.link" :href="r.link" target="_blank" >{{ r.title }}</a>
             <span v-else>{{ r.title }}</span>
             </span>
           </li>
-        </ul>
+        </ol>
       </div>
     </div>
   </div>
@@ -144,28 +135,16 @@ export default {
 </script>
 
 <style scoped>
-.topic {
-  font-size: 1.2em;
-  color: inherit;
-  padding-top: 4.6rem;
-  margin-top: 0.5em;
-}
 .btn-link {
   text-decoration: none !important;
 }
 .stress {
   font-weight: bold;
 }
-ul li {
-  list-style: none;
-}
 .index {
   float: left;
   width: 2em;
   font-weight: bold;
-}
-.icon {
-  width: 24px;
 }
 .proceeding {
   color: #777;
@@ -179,16 +158,16 @@ ul li {
   background: #f8f8f8;
   border-radius: 3px;
 }
-.references {
-  font-size: 0.95em;
+ol {
+    list-style-type: none !important;
+    counter-reset: elementcounter;
 }
-.section {
-  font-size: 1.2em;
+ol > li:before {
+    content: counter(elementcounter) ". ";
+    counter-increment:elementcounter;
+    font-weight: 600;
 }
-.pdf {
-  font-size: 0.7em;
-  color: #aaa;
-  font-style: italic;
-  font-weight: 700;
+.ref-list li:before {
+    content: "["counter(elementcounter) "] ";
 }
 </style>

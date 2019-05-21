@@ -69,6 +69,23 @@ tasks:
         link: http://cocodataset.org/#captions-2015
         target: produce image captions that are informative and accurate
         metrics: [BLEU]
+  - name: Text classification
+    datasets:
+      - name: Clickbait Challenge 2017
+        link: https://www.clickbait-challenge.org/#data
+        abbr: Clickbait
+        target: detect whether a twitter post is CLICKBAIT or NON-CLICKBAIT
+        metrics: [precision, recall, F1 score]
+      - name: "AG's news corpus"
+        link: https://www.di.unipi.it/~gulli/AG_corpus_of_news_articles.html
+        pdf: https://papers.nips.cc/paper/5782-character-level-convolutional-networks-for-text-classification.pdf
+        abbr: AG News
+        target: classify news into different categories
+      - name: "DBpedia ontology dataset"
+        abbr: DBpedia
+        link: https://wiki.dbpedia.org/develop/datasets
+        metrics: [error rate]
+        target: classify Wikipedia articles into different categories
 
 papers:
   - title: Learning to Compose Words into Sentences with Reinforcement Learning
@@ -104,6 +121,9 @@ papers:
     pdf: https://arxiv.org/pdf/1804.06035.pdf
     date: 2018-04-17
     proceeding: NAACL 2018
+    description: our approach uses Q-learning to learn a data selection policy with a small labeled dataset, and then exploits this policy to train the co-training classifiers automatically
+    questions:
+      - Why using two classifiers?
   - title: Robust Distant Supervision Relation Extraction via Deep Reinforcement Learning
     pdf: https://arxiv.org/pdf/1805.09927.pdf
     date: 2018-05-24
