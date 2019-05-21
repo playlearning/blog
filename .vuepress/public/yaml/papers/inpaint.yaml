@@ -63,6 +63,16 @@ papers:
     date: 2019-05-05
     proceeding: CVPR 2019
     pdf: https://arxiv.org/pdf/1905.01639.pdf
+  - title: "VORNet: Spatio-temporally Consistent Video Inpainting for Object Removal"
+    pdf: https://arxiv.org/pdf/1904.06726
+    proceeding: CVPR Workshop 2019
+    date: 2019-04-14
+  - title: Pluralistic Image Completion
+    date: 2019-03-12
+    pdf: https://arxiv.org/abs/1903.04227
+    link: http://www.chuanxiaz.com/publication/pluralistic/
+    code: https://github.com/lyndonzheng/Pluralistic-Inpainting
+    proceeding: CVPR 2019
   - title: Foreground-aware Image Inpainting
     date: 2019-01-17
     proceeding: CVPR 2019
@@ -82,3 +92,7 @@ papers:
 references:
   - title: cvpr_2019_poster.csv
     link: https://github.com/hoya012/CVPR-2019-Paper-Statistics/blob/master/2019_cvpr/cvpr_2019_poster.csv
+  - title: Awesome-Image-Inpainting
+    link: https://github.com/1900zyh/Awesome-Image-Inpainting
+  - title: Image Inpainting Paper List
+    link: https://github.com/geekyutao/Image-Inpainting
