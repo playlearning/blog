@@ -1,0 +1,84 @@
+topic: Image Inapinting
+papers:
+  - title: Image Inpainting
+    pdf: https://iie.fing.edu.uy/publicaciones/2000/BSCB00/Bscb00.pdf
+    date: 2000
+    proceeding: SIGGRAPH 2000
+    stress: true
+  - title: Region Filling and Object Removal by Exemplar-Based Image Inpainting
+    pdf: http://www.irisa.fr/vista/Papers/2004_ip_criminisi.pdf
+    date: 2004
+    stress: true
+    proceeding: TIP 2004
+  - title: Space-Time Video Completion
+    link: http://www.wisdom.weizmann.ac.il/~vision/VideoCompletion.html
+    pdf: http://www.wisdom.weizmann.ac.il/~vision/VideoCompletion/SpaceTimeCompletion.pdf
+    date: 2004
+    proceeding: CVPR 2004
+  - title: "PatchMatch: a randomized correspondence algorithm for structural image editing"
+    pdf: https://gfx.cs.princeton.edu/pubs/Barnes_2009_PAR/patchmatch.pdf
+    link: https://gfx.cs.princeton.edu/pubs/Barnes_2009_PAR/index.php
+    abbr: PathchMatch
+    date: 2009
+    proceeding: SIGGRAPH 2009
+    stress: true
+  - title: "Image Melding: Combining Inconsistent Images using Patch-based Synthesis"
+    link: https://www.ece.ucsb.edu/~psen/melding
+    pdf: https://www.ece.ucsb.edu/~psen/Papers/SIGGRAPH12_ImageMelding.pdf
+    date: 2012
+    proceeding: SIGGRAPH 2012
+  - title: Globally and Locally Consistent Image Completion
+    pdf: http://iizuka.cs.tsukuba.ac.jp/projects/completion/data/completion_sig2017.pdf
+    link: http://iizuka.cs.tsukuba.ac.jp/projects/completion/en/
+    date: 2017
+    proceeding: SIGGRAPH 2017
+  - title: Generative Image Inpainting With Contextual Attention
+    link: http://jiahuiyu.com/deepfill/
+    pdf: https://arxiv.org/pdf/1801.07892.pdf
+    date: 2018-01-24
+    abbr: deepfill
+    proceeding: CVPR 2018
+  - title: Image Inpainting for Irregular Holes Using Partial Convolutions
+    link: http://masc.cs.gmu.edu/wiki/partialconv
+    pdf: https://arxiv.org/pdf/1804.07723.pdf
+    date: 2018-04-20
+    abbr: PConv
+    proceeding: ECCV 2018
+  - title: "EdgeConnect: Generative Image Inpainting with Adversarial Edge Learning"
+    date: 2019-01-01
+    pdf: https://arxiv.org/pdf/1901.00212.pdf
+    code: https://github.com/knazeri/edge-connect
+    proceeding: arXiv 2019
+  - title: Learning Pyramid-Context Encoder Network for High-Quality Image Inpainting
+    date: 2019-04-30
+    proceeding: CVPR 2019
+    pdf: https://arxiv.org/pdf/1904.07475.pdf
+  - title: Deep Flow Guided Video Inpainting
+    date: 2019-05-08
+    proceeding: CVPR 2019
+    link: https://nbei.github.io/video-inpainting.html
+    code: https://github.com/nbei/Deep-Flow-Guided-Video-Inpainting
+    pdf: https://arxiv.org/pdf/1905.02884.pdf
+  - title: Deep Video Inpainting
+    date: 2019-05-05
+    proceeding: CVPR 2019
+    pdf: https://arxiv.org/pdf/1905.01639.pdf
+  - title: Foreground-aware Image Inpainting
+    date: 2019-01-17
+    proceeding: CVPR 2019
+    pdf: https://arxiv.org/pdf/1901.05945
+  - title: Fast Image Inpainting with Parallel Decoding Network
+    date: 2019
+    proceeding: CVPR 2019
+  - title: Coordinate-based Texture Inpainting for Pose-Guided Image Generation
+    date: 2018-11-28
+    proceeding: CVPR 2019
+    pdf: http://in.arxiv.org/pdf/1811.11459v1
+  - title: Free-Form Image Inpainting with Gated Convolution
+    abbr: deepfill2
+    date: 2018-06-10
+    pdf: https://arxiv.org/pdf/1806.03589
+    link: http://jiahuiyu.com/deepfill2/
+references:
+  - title: cvpr_2019_poster.csv
+    link: https://github.com/hoya012/CVPR-2019-Paper-Statistics/blob/master/2019_cvpr/cvpr_2019_poster.csv

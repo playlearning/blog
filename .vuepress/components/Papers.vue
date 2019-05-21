@@ -25,11 +25,11 @@
             <span v-else>{{ p.title }}</span>
             <a v-if="p.pdf" :href="p.pdf" target="_blank"><i class="far fa-file-pdf is-size-7 has-text-black"></i></a>
           </span>
+          <span v-if="p.code">
+              <a :href="p.code" target="_blank"><i class="far fa-file-code has-text-black is-size-7"></i></a>
+          </span>
           <span v-if="p.proceeding" class="has-text-grey is-size-7 is-italic has-text-weight-semibold">{{ p.proceeding }}</span>
           <div v-if="is_verbose" class="has-background-light">
-            <span v-if="p.code">
-                <a :href="p.code" target="_blank"><i class="far fa-file-code has-text-black"></i></a>
-            </span>
             <div v-if="p.questions">
               <p class="title is-6">Questions:</p>
               <ol>
@@ -159,15 +159,22 @@ export default {
   border-radius: 3px;
 }
 ol {
-    list-style-type: none !important;
-    counter-reset: elementcounter;
+  list-style-type: none !important;
+  counter-reset: elementcounter;
 }
 ol > li:before {
-    content: counter(elementcounter) ". ";
-    counter-increment:elementcounter;
-    font-weight: 600;
+  display: inline-block;
+  min-width: 2em;
+  content: counter(elementcounter) ".";
+  counter-increment:elementcounter;
+  font-weight: 600;
+  text-align: right;
+  margin-right: 0.5em;
 }
 .ref-list li:before {
-    content: "["counter(elementcounter) "] ";
+  content: "["counter(elementcounter) "] ";
+}
+.topic_head {
+  margin-top: 1em;
 }
 </style>
