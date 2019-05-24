@@ -23,7 +23,7 @@
       <div class="field is-grouped is-grouped-multiline">
         <div class="control" v-for="(c, t) in tasks">
           <div class="tags has-addons">
-            <span class="tag">{{ t }}</span>
+            <span class="tag button is-light">{{ t }}</span>
             <span class="tag has-background-grey-lighter">{{ c }}</span>
           </div>
         </div>
