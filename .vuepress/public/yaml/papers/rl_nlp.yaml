@@ -1,118 +1,99 @@
 topic: Reinforcement Learning for Natural Language Processing
 target: Find recently NLP tasks on reinforcement learning.
-tasks:
-  - name: Sentiment analysis
-    datasets:
-      - name: Stanford Sentiment Treebank
-        target: predict whether a sentence is a positive or a negative movie review
-        link: https://nlp.stanford.edu/sentiment/index.html
-        metrics: [accuracy]
-  - name: Semantic relatedness
-    datasets:
-      - name: Sentences Involving Compositional Knowledge corpus
-        target: predict the degree of relatedness of two sentences
-        link: https://zenodo.org/record/2787612#.XNu3bdMzYWo
-        abbr: SICK
-        metrics: [MSE]
-  - name: Natural language inference
-    datasets:
-      - name: Stanford Natural Language Inference corpus
-        target: predict whether two sentences are entailment, contradiction, or neutral
-        abbr: SNLI
-        link: https://nlp.stanford.edu/projects/snli/
-        metrics: [accuracy]
-  - name: Generation
-    datasets:
-      - name: IMDB movie review corpus
-        target: maximize the probability of generating words in the following sentence
-        metrics: [perplexity]
-        link:
-  - name: Information extraction
-    datasets:
-      - name: Gun Violence archive
-        link: http://www.shootingtracker.com/Main_Page
-        target: extract the name of shooter, the number of people killed, the number of people wounded and the city where the incident took place
-        metrics: [accuracy]
-      - name: Foodshield EMA database
-        target: extract the affected food product, the adulterant and the location of the incident
-        metrics: [accuracy]
-  - name: Relational reasoning
-    datasets:
-      - name: FB15K-237 Knowledge Base Completion Dataset
-        link: http://nlp.cs.ucsb.edu/data/fb15k-237.tar.gz
-        target: relation reasoning
-        abbr: FB15K-237
-        metrics: [MAP]
-      - name: subset of Never-Ending Language Learning
-        link: http://cs.ucsb.edu/~xwhan/datasets/NELL-995.zip
-        target: relation reasoning
-        abbr: NELL-995
-        metrics: [MAP]
-  - name: Text summarization
-    datasets:
-      - name: subset of Annotated English Gigaword
-        link: https://github.com/facebookarchive/NAMAS#constructing-the-data-set
-        target: generate summary of a piece of text such that its meaning is intact
-        abbr: Gigaword
-        metrics: [ROUGE-2]
-  - name: Machine translation
-    datasets:
-      - name: IWSLT Evaluation 2014 MT Track
-        link: https://sites.google.com/site/iwsltevaluation2014/mt-track
-        target: translate TED and TEDx subtitles provided as text, segmented into sentences
-        abbr: IWSLT 2014
-        metrics: [BLEU]
-  - name: Image caption
-    datasets:
-      - name: Microsoft common objects in context
-        abbr: MSCOCO
-        link: http://cocodataset.org/#captions-2015
-        target: produce image captions that are informative and accurate
-        metrics: [BLEU]
-  - name: Text classification
-    datasets:
-      - name: Clickbait Challenge 2017
-        link: https://www.clickbait-challenge.org/#data
-        abbr: Clickbait
-        target: detect whether a twitter post is CLICKBAIT or NON-CLICKBAIT
-        metrics: [precision, recall, F1 score]
-      - name: "AG's news corpus"
-        link: https://www.di.unipi.it/~gulli/AG_corpus_of_news_articles.html
-        pdf: https://papers.nips.cc/paper/5782-character-level-convolutional-networks-for-text-classification.pdf
-        abbr: AG News
-        target: classify news into different categories
-      - name: "DBpedia ontology dataset"
-        abbr: DBpedia
-        link: https://wiki.dbpedia.org/develop/datasets
-        metrics: [error rate]
-        target: classify Wikipedia articles into different categories
-
 papers:
   - title: Learning to Compose Words into Sentences with Reinforcement Learning
     pdf: https://arxiv.org/pdf/1611.09100.pdf
     date: "2016-11-28"
     proceeding: ICLR 2017
-    task: [sentiment classification, semantic relatedness, natural language inference, sentence generation]
-    description: use PG to discover best tree structure of tree LSTM.
+    tasks:
+      - name: Sentiment analysis
+        datasets:
+          - name: Stanford Sentiment Treebank
+            target: predict whether a sentence is a positive or a negative movie review
+            link: https://nlp.stanford.edu/sentiment/index.html
+            metrics: [accuracy]
+      - name: Semantic relatedness
+        datasets:
+          - name: Sentences Involving Compositional Knowledge corpus
+            target: predict the degree of relatedness of two sentences
+            link: https://zenodo.org/record/2787612#.XNu3bdMzYWo
+            abbr: SICK
+            metrics: [MSE]
+      - name: Natural language inference
+        datasets:
+          - name: Stanford Natural Language Inference corpus
+            target: predict whether two sentences are entailment, contradiction, or neutral
+            abbr: SNLI
+            link: https://nlp.stanford.edu/projects/snli/
+            metrics: [accuracy]
+      - name: Generation
+        datasets:
+          - name: IMDB movie review corpus
+            target: maximize the probability of generating words in the following sentence
+            metrics: [perplexity]
+            link:
+        description: use PG to discover best tree structure of tree LSTM.
   - title: Improving Information Extraction by Acquiring External Evidence with Reinforcement Learning
     pdf: https://arxiv.org/pdf/1603.07954.pdf
     date: "2016-03-25"
     proceeding: EMNLP 2016
     code: https://github.com/karthikncode/DeepRL-InformationExtraction
-    task: [information extraction]
+    tasks:
+      - name: Information extraction
+        datasets:
+          - name: Gun Violence archive
+            link: http://www.shootingtracker.com/Main_Page
+            target: extract the name of shooter, the number of people killed, the number of people wounded and the city where the incident took place
+            metrics: [accuracy]
+          - name: Foodshield EMA database
+            target: extract the affected food product, the adulterant and the location of the incident
+            metrics: [accuracy]
   - title: "DeepPath: A Reinforcement Learning Method for Knowledge Graph Reasoning"
     pdf: https://arxiv.org/pdf/1707.06690.pdf
     date: 2017-07-20
     abbr: DeepPath
     code: https://github.com/xwhan/DeepPath
     proceeding: EMNLP 2017
-    task: [relational reasoning]
+    tasks:
+      - name: Relational reasoning
+        datasets:
+          - name: FB15K-237 Knowledge Base Completion Dataset
+            link: http://nlp.cs.ucsb.edu/data/fb15k-237.tar.gz
+            target: relation reasoning
+            abbr: FB15K-237
+            metrics: [MAP]
+          - name: subset of Never-Ending Language Learning
+            link: http://cs.ucsb.edu/~xwhan/datasets/NELL-995.zip
+            target: relation reasoning
+            abbr: NELL-995
+            metrics: [MAP]
   - title: Sequence Level Training with Recurrent Neural Networks
     pdf: https://arxiv.org/pdf/1511.06732.pdf
     date: 2015-11-20
     abbr: MIXER
     proceeding: ICLR 2016
-    task: [text summarization, machine translation, image caption]
+    tasks:
+      - name: Text summarization
+        datasets:
+          - name: subset of Annotated English Gigaword
+            link: https://github.com/facebookarchive/NAMAS#constructing-the-data-set
+            target: generate summary of a piece of text such that its meaning is intact
+            abbr: Gigaword
+            metrics: [ROUGE-2]
+      - name: Machine translation
+        datasets:
+          - name: IWSLT Evaluation 2014 MT Track
+            link: https://sites.google.com/site/iwsltevaluation2014/mt-track
+            target: translate TED and TEDx subtitles provided as text, segmented into sentences
+            abbr: IWSLT 2014
+            metrics: [BLEU]
+      - name: Image caption
+        datasets:
+          - name: Microsoft common objects in context
+            abbr: MSCOCO
+            link: http://cocodataset.org/#captions-2015
+            target: produce image captions that are informative and accurate
+            metrics: [BLEU]
   - title: "Learning how to Active Learn: A Deep Reinforcement Learning Approach"
     pdf: https://arxiv.org/pdf/1708.02383.pdf
     date: 2017-08-08
@@ -124,6 +105,24 @@ papers:
     description: our approach uses Q-learning to learn a data selection policy with a small labeled dataset, and then exploits this policy to train the co-training classifiers automatically
     questions:
       - Why using two classifiers?
+    tasks:
+      - name: Text classification
+        datasets:
+          - name: Clickbait Challenge 2017
+            link: https://www.clickbait-challenge.org/#data
+            abbr: Clickbait
+            target: detect whether a twitter post is CLICKBAIT or NON-CLICKBAIT
+            metrics: [precision, recall, F1 score]
+          - name: "AG's news corpus"
+            link: https://www.di.unipi.it/~gulli/AG_corpus_of_news_articles.html
+            pdf: https://papers.nips.cc/paper/5782-character-level-convolutional-networks-for-text-classification.pdf
+            abbr: AG News
+            target: classify news into different categories
+          - name: "DBpedia ontology dataset"
+            abbr: DBpedia
+            link: https://wiki.dbpedia.org/develop/datasets
+            metrics: [error rate]
+            target: classify Wikipedia articles into different categories
   - title: Robust Distant Supervision Relation Extraction via Deep Reinforcement Learning
     pdf: https://arxiv.org/pdf/1805.09927.pdf
     date: 2018-05-24

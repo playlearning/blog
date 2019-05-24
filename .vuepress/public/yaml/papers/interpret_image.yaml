@@ -3,6 +3,7 @@ papers:
   - title: Exploring Neural Networks with Activation Atlases
     link: https://distill.pub/2019/activation-atlas/
     date: 2019-03-06
+    code: https://github.com/tensorflow/lucid
   - title: Feature Visualization
     link: https://distill.pub/2017/feature-visualization/
     date: 2017-07-11
@@ -33,4 +34,3 @@ papers:
   - title: Model selection and estimation in regression with grouped variables
     date: 2006
     pdf: http://pages.stat.wisc.edu/~myuan/papers/glasso.final.pdf
-

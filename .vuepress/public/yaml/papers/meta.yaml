@@ -1,0 +1,9 @@
+topic: Meta Learning
+papers:
+  - title: Human-level concept learning through probabilistic program induction
+    date: 2015-12-11
+    proceeding: Science 2015
+    pdf: https://www.cs.cmu.edu/~rsalakhu/papers/LakeEtAl2015Science.pdf
+references:
+  - title: Learning to Learn
+    link: https://bair.berkeley.edu/blog/2017/07/18/learning-to-learn/
