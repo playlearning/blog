@@ -144,6 +144,17 @@ papers:
     date: 2017-11-13
     stress: true
     proceeding: ICLR 2018
+    tasks:
+      - name: Text summarization
+        datasets:
+          - name: "CNN/Daily Mail"
+            link: https://cs.nyu.edu/~kcho/DMQA/
+            target: abstractive summarization
+            metrics: ['ROUGE-1']
+          - name: "New York Times"
+            target: abstractive summarization
+            metrics: ['ROUGE-1']
+            link: https://catalog.ldc.upenn.edu/LDC2008T19
   - title: Deep Communicating Agents for Abstractive Summarization
     pdf: https://arxiv.org/pdf/1803.10357.pdf
     date: 2018-08-15
@@ -166,7 +177,14 @@ papers:
     date: 2009-07-04
     abbr: SEARN
     stress: true
+    description: transform structured prediction problems into binary prediction problems
     proceeding: Machine Learning 2009
+    tasks:
+      - name: Sequence labeling
+        #datasets:
+          #- name: Handwriting recognition
+          #- name: Spanish named entity recognition
+          #- name: Syntactic chunking
   - title: "KBGAN: Adversarial Learning for Knowledge Graph Embeddings"
     pdf: https://arxiv.org/pdf/1711.04071.pdf
     date: 2018-04-16
