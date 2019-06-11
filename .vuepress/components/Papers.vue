@@ -177,8 +177,11 @@ export default {
       return !!(p.questions || p.tasks);
     },
     sentence: function(raw) {
+      raw = raw.trim()
       var res = raw.charAt(0).toUpperCase() + raw.slice(1)
-      if (!(res.charAt(raw.length-1) in [',', '.', '!', '?'])) {
+      if (![',', '.', '!', '?'].includes(res.charAt(res.length-1))) {
+        console.log(res)
+        console.log(res.charAt(res.length-1))
         res += '.'
       }
       return res

@@ -15,14 +15,14 @@ date: 2019-04-18
 
 ## Topics
 
-<Papers src='/yaml/papers/rl_nlp.yaml'></Papers>
+<Papers src='/yaml/papers/rl_nlp.yaml' verbose></Papers>
 
 
-## Comparison of different schedules
+<!--## Comparison of different schedules-->
 
-<cs294-112></cs294-112>
+<!--<cs294-112></cs294-112>-->
 
-<rl-60days></rl-60days>
+<!--<rl-60days></rl-60days>-->
 
 
 ## Materials
@@ -50,6 +50,7 @@ date: 2019-04-18
 1. 综述：
     1. Deep Reinforcement Learning: Pong from Pixels：http://karpathy.github.io/2016/05/31/rl/
     1. OpenAI Spinning Up - Part 1: Key Concepts in RL：https://spinningup.openai.com/en/latest/spinningup/rl_intro.html#part-1-key-concepts-in-rl
+    1. Deep Reinforcement Learning Doesn't Work Yet: https://www.alexirpan.com/2018/02/14/rl-hard.html
 1. 应用：
     1. Robotics:
         1. Stanford helicopter：http://heli.stanford.edu/
@@ -88,3 +89,4 @@ date: 2019-04-18
     1. OpenAI Blog：https://openai.com/blog/
     1. Arxiv Sanity：http://www.arxiv-sanity.com/search?q=reinforcement+learning
     1. University of Alberta: https://spaces.facsci.ualberta.ca/rlai/
+
