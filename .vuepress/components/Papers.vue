@@ -132,7 +132,7 @@ export default {
       if (this.paper_list.papers) {
         var res = this.active_tasks.length ? this.active_papers : this.paper_list.papers;
         return res.sort(
-          (a, b) => new Date(String(a.date)) - new Date(String(b.date)))
+          (b, a) => new Date(String(a.date)) - new Date(String(b.date)))
       } else {
         return []
       }
