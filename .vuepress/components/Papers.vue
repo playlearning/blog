@@ -14,10 +14,10 @@
         YAML &nbsp;
         <i class="fas fa-cogs"></i>
       </a>
-      <a class="button is-small is-light btn-link" href="https://github.com/playlearning/blog/tree/master/.vuepress/public/yaml/papers" target="_blank">
-        Download Papers in List &nbsp;
-        <i class="fas fa-download"></i>
-      </a>
+      <!--<a class="button is-small is-light btn-link" href="https://github.com/playlearning/blog/tree/master/.vuepress/public/yaml/papers" target="_blank">-->
+        <!--Download Papers in List &nbsp;-->
+        <!--<i class="fas fa-download"></i>-->
+      <!--</a>-->
       </p>
       <p class="title is-5" v-if="Object.keys(tasks).length">Tasks</p>
       <div class="field is-grouped is-grouped-multiline">

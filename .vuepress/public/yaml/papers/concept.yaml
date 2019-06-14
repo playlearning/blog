@@ -5,10 +5,15 @@ papers:
     proceeding: ICCV 2017
     pdf: https://arxiv.org/pdf/1705.03633.pdf
     code: https://github.com/facebookresearch/clevr-iep
+    abbr: iep
+    link: https://cs.stanford.edu/people/jcjohns/iep/
   - title: Generative Models of Visually Grounded Imagination
     date: 2018-11-09
     proceeding: ICLR 2018
     pdf: https://arxiv.org/pdf/1705.10762.pdf
+    code: https://github.com/google/joint_vae
+    motivation: People can imagine images with different visual concepts (man with pink hair).
+    results: Make generative models can imagine compositionally novel concrete and abstract visual concepts. Evaluate model with correctness, coverage, compositionality.
   - title: "SCAN: Learning Hierarchical Compositional Visual Concepts"
     date: 2018-06-06
     proceeding: ICLR 2018
