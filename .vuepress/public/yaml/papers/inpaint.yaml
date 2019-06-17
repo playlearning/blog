@@ -45,6 +45,7 @@ papers:
     abbr: PConv
     proceeding: ECCV 2018
   - title: "EdgeConnect: Generative Image Inpainting with Adversarial Edge Learning"
+    stress: true
     date: 2019-01-01
     pdf: https://arxiv.org/pdf/1901.00212.pdf
     code: https://github.com/knazeri/edge-connect
