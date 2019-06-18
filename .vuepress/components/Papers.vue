@@ -1,25 +1,22 @@
 <template>
-  <div :id="topic_id">
-    <div class="topic_head">
-      <p class="title is-4">
-      <a class="has-text-black" :href="'#' + topic_id">Topic: {{ paper_list.topic }}</a>
-      </p>
-      <p>
-      <span class="button is-light is-small" v-on:click="toggle_verbose">
-        <span v-if="is_verbose" class="verbose-text">Hide</span>
-        <span v-else class="verbose-text">Show</span>
-        Detail
-      </span>
-      <a class="button is-small is-light btn-link" :href="src" target="_blank">
-        YAML &nbsp;
-        <i class="fas fa-cogs"></i>
-      </a>
-      <!--<a class="button is-small is-light btn-link" href="https://github.com/playlearning/blog/tree/master/.vuepress/public/yaml/papers" target="_blank">-->
-        <!--Download Papers in List &nbsp;-->
-        <!--<i class="fas fa-download"></i>-->
-      <!--</a>-->
-      </p>
-      <p class="title is-5" v-if="Object.keys(tasks).length">Tasks</p>
+  <div :id="topic_id" class="papers">
+    <div class="topic_head title is-5">
+        <a class="has-text-black" :href="'#' + topic_id">
+          <span class="icon is-medium">
+            <i class="fas fa-star"></i>
+          </span>
+          <span>
+            {{ paper_list.topic }}
+          </span>
+        </a>
+    </div>
+    <div>
+      <div class="title is-6 title-gap" v-if="Object.keys(tasks).length">
+          <span class="icon is-medium">
+            <i class="fas fa-list"></i>
+          </span>
+          <span>Tasks</span>
+      </div>
       <div class="field is-grouped is-grouped-multiline">
         <div class="control" v-for="(c, t) in tasks">
           <div class="tags has-addons">
@@ -28,7 +25,33 @@
           </div>
         </div>
       </div>
-      <p class="title is-5">Resources</p>
+      <div class="level title-gap">
+        <div class="level-left title is-6" style="margin-bottom:0;">
+          <span class="icon is-medium">
+            <i class="fas fa-list"></i>
+          </span>
+          <span>Resources</span>
+        </div>
+        <div class="level-right">
+          <span>
+            <span class="button is-light is-small" v-on:click="toggle_verbose">
+              <span v-if="is_verbose">
+                <i class="fas fa-eye-slash"></i>
+              </span>
+              <span v-else>
+                <i class="fas fa-eye"></i>
+              </span>
+            </span>
+            <a class="button is-small is-light btn-link" :href="src" target="_blank">
+              <i class="fas fa-cogs"></i>
+            </a>
+            <!--<a class="button is-small is-light btn-link" href="https://github.com/playlearning/blog/tree/master/.vuepress/public/yaml/papers" target="_blank">-->
+            <!--Download Papers in List &nbsp;-->
+            <!--<i class="fas fa-download"></i>-->
+            <!--</a>-->
+          </span>
+        </div>
+      </div>
       <ol>
         <li v-for="(p, index) in papers">
           <span v-bind:class="{ stress: p.stress }">
@@ -52,45 +75,65 @@
               </div>
               <div class="columns">
                 <div class="column" v-if="p.tasks">
-                    <div class="media-content">
-                        <div v-for="(t, index) in p.tasks">
-                          <div class="tag">
-                            <i class="fas fa-crosshairs"></i>
+                  <div class="media-content">
+                    <div v-for="(t, index) in p.tasks">
+                      <div class="tag">
+                        <i class="fas fa-crosshairs"></i>
+                        &nbsp;
+                        {{ t.name }}
+                      </div>
+                      <div class="tags" v-if="t.datasets">
+                        <span v-for="d in t.datasets" class="is-size-7 tag is-white">
+                          <a :href="d.link" :class="['has-text-grey', 'btn-link', 'is-tooltip-right', d.target ? ' tooltip' : '']" :data-tooltip="d.target" target="_blank">
+                            <i class="fas fa-database"></i>
                             &nbsp;
-                            {{ t.name }}
-                          </div>
-                          <div class="tags" v-if="t.datasets">
-                            <span v-for="d in t.datasets" class="is-size-7 tag is-white">
-                              <a :href="d.link" :class="['has-text-grey', 'btn-link', 'is-tooltip-right', d.target ? ' tooltip' : '']" :data-tooltip="d.target" target="_blank">
-                                <i class="fas fa-database"></i>
-                                &nbsp;
-                                <span v-if="d.abbr">{{ d.abbr }}</span>
-                                <span v-else="d.abbr">{{ d.name }}</span>
-                              </a>
-                            </span>
-                          </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="column" v-if="p.questions">
-                    <div class="media-content">
-                      <div v-for="(q, index) in p.questions">
-                        <div class="tag">
-                          <i class="far fa-question-circle"></i>
-                          &nbsp;
-                          {{ q }}
-                        </div>
-                        <div></div>
+                            <span v-if="d.abbr">{{ d.abbr }}</span>
+                            <span v-else="d.abbr">{{ d.name }}</span>
+                          </a>
+                        </span>
                       </div>
                     </div>
+                  </div>
+                </div>
+                <div class="column" v-if="p.questions">
+                  <div class="media-content">
+                    <div v-for="(q, index) in p.questions">
+                      <div class="tag">
+                        <i class="far fa-question-circle"></i>
+                        &nbsp;
+                        {{ q }}
+                      </div>
+                      <div></div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </li>
       </ol>
+      <div v-if="researchers.length">
+        <div class="title is-6 title-gap">
+          <span class="icon is-medium">
+            <i class="fas fa-user-graduate"></i>
+          </span>
+          <span>Researchers</span>
+        </div>
+        <ul style="margin-top:0; margin-left:4em;">
+          <li v-for="(r, index) in researchers">
+            <a v-if="r.link" :href="r.link" target="_blank" >{{ r.name }}</a>
+            <span v-else>{{ r.title }}</span>
+            </span>
+          </li>
+        </ul>
+      </div>
       <div v-if="references.length">
-        <p class="title is-5">References</p>
+        <div class="title is-6 title-gap">
+          <span class="icon is-medium">
+            <i class="fas fa-list"></i>
+          </span>
+          <span>References</span>
+        </div>
         <ol class="ref-list">
           <li v-for="(r, index) in references">
             <a v-if="r.link" :href="r.link" target="_blank" >{{ r.title }}</a>
@@ -140,6 +183,13 @@ export default {
     references: function() {
       if (this.paper_list.references) {
         return this.paper_list.references
+      } else {
+        return []
+      }
+    },
+    researchers: function() {
+      if (this.paper_list.researchers) {
+        return this.paper_list.researchers
       } else {
         return []
       }
@@ -243,5 +293,8 @@ ol > li:before {
 }
 .verbose-text {
   width: 2.8em;
+}
+.title-gap {
+  margin-bottom: 0.5em;
 }
 </style>

@@ -392,3 +392,5 @@ references:
     link: https://naacl2019.org/program/accepted/
   - title: drl4nlp.scratchpad
     link: https://github.com/ganeshjawahar/drl4nlp.scratchpad
+  - title: A Survey of Reinforcement Learning Informed by Natural Language
+    link: https://arxiv.org/pdf/1906.03926.pdf

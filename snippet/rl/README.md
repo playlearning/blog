@@ -1,10 +1,9 @@
 ---
 date: 2019-04-18
+modified: 2019-06-12
 ---
 
-# Deep Reinforcement Learning Seminar
-
-<i class="far fa-edit"></i> 2019-06-12
+# Deep Reinforcement Learning
 
 <!--## Sessions-->
 
@@ -15,10 +14,6 @@ date: 2019-04-18
 <!--<Sessions src='/yaml/rl_sessions.yaml' />-->
 
 
-## Topics
-
-<Papers src='/yaml/papers/rl_nlp.yaml'></Papers>
-
 
 <!--## Comparison of different schedules-->
 
@@ -28,6 +23,7 @@ date: 2019-04-18
 
 
 ## Materials
+
 
 1. Blogs
     - [Deep Reinforcement Learning Doesn't Work Yet](https://www.alexirpan.com/2018/02/14/rl-hard.html)
@@ -71,7 +67,7 @@ date: 2019-04-18
     - NLP:
         - [Deep Reinforcement Learning for Natural Language Processing](https://sites.cs.ucsb.edu/~william/papers/ACL2018DRL4NLP.pdf)
         - [News Recommendation](http://www.personal.psu.edu/~gjz5038/paper/www2018_reinforceRec/www2018_reinforceRec.pdf)
-    1. Others:
+    - Others:
         - [AutoML](https://ai.googleblog.com/2017/05/using-machine-learning-to-explore.html?m=1)
 1. Researchers
     - Richard Bellman
@@ -89,4 +85,9 @@ date: 2019-04-18
     - [OpenAI Blog](https://openai.com/blog/)
     - [Arxiv Sanity](http://www.arxiv-sanity.com/search?q=reinforcement+learning)
     - [University of Alberta](https://spaces.facsci.ualberta.ca/rlai/)
+
+## RL for NLP
+
+<Papers src='/yaml/papers/rl_nlp.yaml'></Papers>
+
 
