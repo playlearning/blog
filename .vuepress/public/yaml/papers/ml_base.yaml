@@ -7,3 +7,6 @@ papers:
       - What is the difference between likelihood and probability?
       - Why do we `maximize` likelihood?
       - Why `log` likelihood?
+  - title: Understanding the Bias-Variance Tradeoff
+    link: http://scott.fortmann-roe.com/docs/BiasVariance.html
+    date: 2012-06-01
