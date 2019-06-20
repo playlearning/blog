@@ -3,6 +3,7 @@
 
 ## Highlight resorces
 
+- [Natural Language Processing SOTA](https://paperswithcode.com/area/natural-language-processing)
 - [NLP-progress](https://nlpprogress.com/)
 
 <!--<Papers src="/yaml/papers/nlp_basics.yaml"></Papers>-->
