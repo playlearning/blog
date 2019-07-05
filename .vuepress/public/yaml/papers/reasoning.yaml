@@ -2,6 +2,10 @@ topic: NLP Reasoning
 researchers:
   - name: Jacob Andreas
     link: http://web.mit.edu/jda/www/
+  - name: Devi Parikh
+    link: https://www.cc.gatech.edu/~parikh/publications.html
+  - name: Sanja Fidler
+    link: https://www.cs.utoronto.ca/~fidler/publications.html
 references:
   - title: A curated list of research papers related to learning disentangled representations
     link: https://github.com/sootlasten/disentangled-representation-papers
